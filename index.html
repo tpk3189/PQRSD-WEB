@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario PQRSD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario PQRSD</h2>
+    <form id="pqrsd-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" required>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="apellidos" id="apellidos" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="tipo">Tipo de PQRSD:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="peticiones">Peticiones</option>
+        <option value="quejas">Quejas</option>
+        <option value="reclamos">Reclamos</option>
+        <option value="solicitudes">Solicitudes</option>
+        <option value="denuncias">Denuncias</option>
+      </select>
+
+      <label for="archivo">Adjuntar documento:</label>
+      <input type="file" name="archivo" id="archivo" accept=".pdf,.jpg,.png,.doc,.docx">
+
+      <label>
+        <input type="checkbox" name="ser_humano" required> Soy humano
+      </label>
+      <label>
+        <input type="checkbox" name="aceptar_terminos" required> Acepto los términos y condiciones
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
