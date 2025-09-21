@@ -1,8 +1,6 @@
 const form = document.getElementById('pqrsd-form');
 const mensaje = document.getElementById('mensaje');
-
-// REEMPLAZA con tu URL de Google Apps Script
-const scriptURL = 'https://script.google.com/macros/s/XXXXXXXXXXX/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbztTEvQigIqAsZ03W5BHA1tQRBWsvksfR7m6WSNiX-SNG23iSWQ9Kt_024JUTK5qLg8tQ/exec';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -24,3 +22,4 @@ form.addEventListener('submit', e => {
     mensaje.innerHTML = "Ocurrió un error.";
   });
 });
+
