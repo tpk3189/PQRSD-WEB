@@ -1,7 +1,7 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("pqrsd-form");  // ajusta con el id que uses en tu HTML
+  const form = document.getElementById("pqrsd-form");
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -46,4 +46,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
