@@ -1,7 +1,7 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("miFormulario");
+  const form = document.getElementById("pqrsd-form");
   form.addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
 
 
